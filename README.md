@@ -1,4 +1,5 @@
 # Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments (IEEE TVCG, Under Review)
+![Python](https://img.shields.io/badge/Python->=3.8.12-Blue?logo=python)  ![Pytorch](https://img.shields.io/badge/PyTorch->=1.11.0-Red?logo=pytorch)
 Official Pytorch implementation of the paper "Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments", IEEE TVCG, Under Review
 
 ## [Dataset](https://www.dropbox.com/scl/fi/u1z2pbewlzuy6ox3s8od6/Dataset.zip?rlkey=wbw3agb3wy37c6ph6ld23dxwq&e=1&st=nwpukgq8&dl=0)
