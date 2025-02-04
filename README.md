@@ -3,4 +3,4 @@ Official Pytorch implementation of the paper "Real-time Translation of Upper-bod
 
 ## Acknowledgements
 This repository contains pieces of code from the following repository: \
-[Interactive Character Control with Auto-Regressive Motion Diffusion Models](https://github.com/Yi-Shi94/AMDM). \
+[Interactive Character Control with Auto-Regressive Motion Diffusion Models](https://github.com/Yi-Shi94/AMDM)
