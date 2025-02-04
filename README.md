@@ -1,4 +1,4 @@
-# Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments (IEEE TVCG Under Review)
+# Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments (IEEE TVCG, Under Review)
 Official Pytorch implementation of the paper "Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments", IEEE TVCG Under Review
 
 ## Acknowledgements
