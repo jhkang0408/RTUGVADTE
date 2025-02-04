@@ -17,11 +17,11 @@ python train_UGNet.py --model 'MoE' --handedness 'right' --scheduledSampling Tru
 ```
 
 ## Test
-To test MPNet using metric 'MPE' on test subject (height: 161cm), run the following commands.
+To test MPNet using metric *MPE* on test subject (height: 161cm), run the following commands.
 ```bash
 python test_MPNet.py --subject '161' --model 'MoE' --metric 'MPE'
 ```
-To test UGNet using metric 'DIP' on test subject (height: 161cm), run the following commands.
+To test UGNet using metric *DIP* on test subject (height: 161cm), run the following commands.
 ```bash
 python test_UGNet.py --subject '161' --model 'MoE' --metric 'DIP'
 ```
