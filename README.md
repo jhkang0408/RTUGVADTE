@@ -6,6 +6,21 @@ Official Pytorch implementation of the paper "Real-time Translation of Upper-bod
 ## [Dataset](https://www.dropbox.com/scl/fi/u1z2pbewlzuy6ox3s8od6/Dataset.zip?rlkey=wbw3agb3wy37c6ph6ld23dxwq&e=1&st=nwpukgq8&dl=0)
 Unzip and move to the main folder.
 
+## Train
+To train MPNet for right-handedness, run the following commands.
+```bash
+python train_MPNet.py --model 'MoE' --handedness 'right'
+```
+To train UGNet for right-handedness, run the following commands.
+```bash
+python train_MPNet.py --model 'MoE' --handedness 'right'
+```
+## Test
+To train human motion manifold networks from the scratch, run the following commands.
+```bash
+python train.py --config configs/H3.6M.yaml
+```
+
 ## Acknowledgements
 This repository contains pieces of code from the following repository: \
 [Interactive Character Control with Auto-Regressive Motion Diffusion Models](https://github.com/Yi-Shi94/AMDM)
