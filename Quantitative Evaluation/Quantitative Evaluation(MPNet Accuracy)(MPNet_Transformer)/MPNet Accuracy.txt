@@ -1,0 +1,1 @@
+[Total: 0.056] [Gaze: 0.065] [Deictic Gesture: 0.068] [Idle: 0.034]
