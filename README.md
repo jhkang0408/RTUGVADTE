@@ -9,16 +9,21 @@ Unzip and move to the main folder.
 ## Train
 To train MPNet for right-handedness, run the following commands.
 ```bash
-python train_MPNet.py --model 'MoE' --handedness 'right'
+python train_MPNet.py --model 'MoE' --handedness 'right' --dataAugmentation True --epochs 80 --batchSize 16
 ```
 To train UGNet for right-handedness, run the following commands.
 ```bash
-python train_MPNet.py --model 'MoE' --handedness 'right'
+python train_UGNet.py --model 'MoE' --handedness 'right' --scheduledSampling True --dataAugmentation False --epochs 120 --c1 30 --c2 60 --batchSize 32
 ```
+
 ## Test
-To train human motion manifold networks from the scratch, run the following commands.
+To test MPNet using metric 'MPE' on test subject (height: 161cm), run the following commands.
 ```bash
-python train.py --config configs/H3.6M.yaml
+python test_MPNet.py --subject '161' --model 'MoE' --metric 'MPE'
+```
+To test UGNet using metric 'DIP' on test subject (height: 161cm), run the following commands.
+```bash
+python test_UGNet.py --subject '161' --model 'MoE' --metric 'DIP'
 ```
 
 ## Acknowledgements
