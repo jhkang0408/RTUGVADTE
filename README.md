@@ -3,7 +3,7 @@
 
 > **Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments**<br>
 > Jiho Kang, Taehei Kim, Hyeshim Kim, and [Sung-Hee Lee](https://scholar.google.com/citations?hl=en&user=AVII4wsAAAAJ)<br>
-> IEEE TVCG, Under Review<br>
+> IEEE TVCG, 2025
 
 ## [Dataset](https://www.dropbox.com/scl/fi/u1z2pbewlzuy6ox3s8od6/Dataset.zip?rlkey=wbw3agb3wy37c6ph6ld23dxwq&e=1&st=nwpukgq8&dl=0)
 Unzip and move to the main folder.
