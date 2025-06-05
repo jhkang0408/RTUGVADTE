@@ -5,6 +5,11 @@
 > Jiho Kang, Taehei Kim, Hyeshim Kim, and [Sung-Hee Lee](https://scholar.google.com/citations?hl=en&user=AVII4wsAAAAJ)<br>
 > IEEE TVCG, 2025
 
+## Demo
+1. **[Main Video](https://youtu.be/mBE3tl9B8NE?feature=shared)**
+2. **[More Animation Results](https://youtu.be/Rhb9zL9ehJk?feature=shared)**
+3. **[User Evaluation](https://youtu.be/AmG1tvtSN9E?feature=shared)**
+
 ## [Dataset](https://www.dropbox.com/scl/fi/u1z2pbewlzuy6ox3s8od6/Dataset.zip?rlkey=wbw3agb3wy37c6ph6ld23dxwq&e=1&st=nwpukgq8&dl=0)
 Unzip and move to the main folder.
 
