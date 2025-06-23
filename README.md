@@ -1,4 +1,4 @@
-# Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments (Official Implementation)
+# [Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments](https://jhkang0408.github.io/RTUGVADTE/) (Official Implementation)
 ![Python](https://img.shields.io/badge/Python->=3.8.12-Blue?logo=python)  ![Pytorch](https://img.shields.io/badge/PyTorch->=1.11.0-Red?logo=pytorch)
 
 > **Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments**<br>
