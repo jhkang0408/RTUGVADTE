@@ -5,7 +5,7 @@
 > Jiho Kang, Taehei Kim, Hyeshim Kim, and [Sung-Hee Lee](https://scholar.google.com/citations?hl=en&user=AVII4wsAAAAJ)<br>
 > IEEE TVCG, 2025
 
-## [Project](https://jhkang0408.github.io/RTUGVADTE/)
+## [Project Page](https://jhkang0408.github.io/RTUGVADTE/)
 
 ## Demo
 1. **[Main Video](https://youtu.be/mBE3tl9B8NE?feature=shared)**
