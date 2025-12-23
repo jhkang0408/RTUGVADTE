@@ -40,127 +40,18 @@
   <script src="static/js/index.js"></script>
 
   <style>
-    /* Custom color scheme - darker, more sophisticated */
-    :root {
-      --primary-color: #1e3a5f;
-      --primary-light: #2d5a87;
-      --secondary-color: #4a5568;
-      --accent-color: #c53030;
-      --text-dark: #1a202c;
-      --text-medium: #4a5568;
-      --text-light: #718096;
-    }
-
-    /* Title styling with subtle gradient */
-    .publication-title {
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      font-weight: 700 !important;
-      line-height: 1.2 !important;
-      padding-bottom: 0.5rem;
-    }
-
-    /* Author names styling */
-    .publication-authors a {
-      color: var(--primary-light) !important;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    .publication-authors a:hover {
-      color: var(--accent-color) !important;
-    }
-
-    /* Affiliation styling */
-    .affiliation {
-      color: var(--text-medium);
-      font-size: 1.1rem;
-      font-weight: 400;
-      margin-top: 0.8rem;
-    }
-
-    /* Journal styling */
-    .journal-info {
-      margin-top: 0.6rem;
-      font-size: 1.05rem;
-      color: var(--primary-light);
-      font-weight: 500;
-      font-style: italic;
-    }
-
-    /* Section titles */
-    .title.is-3 {
-      color: var(--primary-color) !important;
-      font-weight: 600 !important;
-      position: relative;
-      display: inline-block;
-    }
-
-    .title.is-3::after {
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-      width: 50px;
-      height: 3px;
-      background: var(--accent-color);
-      border-radius: 2px;
-    }
-
-    /* Buttons styling */
-    .button.is-dark {
-      background: var(--primary-color) !important;
-      border: none !important;
+    /* 버튼 호버 효과 */
+    .publication-links .button {
       transition: all 0.3s ease;
     }
-
-    .button.is-dark:hover {
-      background: var(--primary-light) !important;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
+    
+    .publication-links .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
-
-    /* Abstract section */
-    .hero.is-light {
-      background: #f7f8fa !important;
-    }
-
-    /* BibTeX section */
-    #BibTeX .title {
-      color: var(--primary-color) !important;
-    }
-
-    #BibTeX pre {
-      background: #1a202c;
-      border-radius: 8px;
-      border-left: 4px solid var(--accent-color);
-    }
-
-    /* Video section titles centering fix */
-    .hero-body .title.is-3 {
-      text-align: center;
-      display: block;
-    }
-
-    .hero-body .title.is-3::after {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    /* Footer links */
-    footer a {
-      color: var(--primary-light) !important;
-    }
-
-    footer a:hover {
-      color: var(--accent-color) !important;
-    }
-
-    /* Smooth scrolling */
-    html {
-      scroll-behavior: smooth;
+    
+    .publication-links .button:active {
+      transform: translateY(-1px);
     }
   </style>
 </head>
@@ -184,15 +75,11 @@
                   <span class="author-block">
                     <a href="https://lava.kaist.ac.kr/?page_id=41" target="_blank">Sung-Hee Lee</a>
                   </span>
-            </div>
+                  </div>
 
-            <div class="affiliation">
-              Korea Advanced Institute of Science and Technology
-            </div>
-
-            <div class="journal-info">
-              IEEE Transactions on Visualization and Computer Graphics, 2025
-            </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Korea Advanced Institute of Science and Technology<br><span style="color: #0076a8; font-weight: 500;">IEEE Transactions on Visualization and Computer Graphics</span>, 2025</span>
+                  </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
