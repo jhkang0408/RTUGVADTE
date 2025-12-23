@@ -40,19 +40,20 @@
   <script src="static/js/index.js"></script>
 
   <style>
-    /* Custom color scheme */
+    /* Custom color scheme - darker, more sophisticated */
     :root {
-      --primary-color: #2563eb;
-      --primary-dark: #1d4ed8;
-      --secondary-color: #7c3aed;
-      --accent-color: #0891b2;
-      --text-dark: #1e293b;
-      --text-medium: #475569;
+      --primary-color: #1e3a5f;
+      --primary-light: #2d5a87;
+      --secondary-color: #4a5568;
+      --accent-color: #c53030;
+      --text-dark: #1a202c;
+      --text-medium: #4a5568;
+      --text-light: #718096;
     }
 
-    /* Title styling with gradient */
+    /* Title styling with subtle gradient */
     .publication-title {
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -63,31 +64,39 @@
 
     /* Author names styling */
     .publication-authors a {
-      color: var(--primary-color) !important;
+      color: var(--primary-light) !important;
       font-weight: 500;
       transition: color 0.3s ease;
     }
 
     .publication-authors a:hover {
-      color: var(--secondary-color) !important;
+      color: var(--accent-color) !important;
     }
 
-    /* Institution and journal styling */
-    .publication-authors .author-block:last-child {
+    /* Affiliation styling */
+    .affiliation {
       color: var(--text-medium);
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-top: 0.8rem;
     }
 
-    .is-size-5.publication-authors:last-of-type {
-      color: var(--text-dark);
+    /* Journal styling */
+    .journal-info {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.8rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-color);
+      color: #fff;
+      border-radius: 4px;
+      font-size: 0.95rem;
       font-weight: 500;
     }
 
-    .is-size-5.publication-authors:last-of-type span {
-      background: linear-gradient(135deg, #f0f9ff 0%, #ede9fe 100%);
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      display: inline-block;
-      border-left: 4px solid var(--primary-color);
+    .journal-info .journal-icon {
+      color: #ffd700;
     }
 
     /* Section titles */
@@ -103,29 +112,28 @@
       position: absolute;
       bottom: -8px;
       left: 0;
-      width: 60px;
+      width: 50px;
       height: 3px;
-      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      background: var(--accent-color);
       border-radius: 2px;
     }
 
     /* Buttons styling */
     .button.is-dark {
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+      background: var(--primary-color) !important;
       border: none !important;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
     }
 
     .button.is-dark:hover {
-      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-color) 100%) !important;
+      background: var(--primary-light) !important;
       transform: translateY(-2px);
-      box-shadow: 0 6px 12px -2px rgba(37, 99, 235, 0.3);
+      box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
     }
 
     /* Abstract section */
     .hero.is-light {
-      background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%) !important;
+      background: #f7f8fa !important;
     }
 
     /* BibTeX section */
@@ -134,9 +142,9 @@
     }
 
     #BibTeX pre {
-      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-      border-radius: 12px;
-      border-left: 4px solid var(--primary-color);
+      background: #1a202c;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent-color);
     }
 
     /* Video section titles centering fix */
@@ -152,11 +160,11 @@
 
     /* Footer links */
     footer a {
-      color: var(--primary-color) !important;
+      color: var(--primary-light) !important;
     }
 
     footer a:hover {
-      color: var(--secondary-color) !important;
+      color: var(--accent-color) !important;
     }
 
     /* Smooth scrolling */
@@ -185,11 +193,16 @@
                   <span class="author-block">
                     <a href="https://lava.kaist.ac.kr/?page_id=41" target="_blank">Sung-Hee Lee</a>
                   </span>
-                  </div>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Korea Advanced Institute of Science and Technology<br>IEEE Transactions on Visualization and Computer Graphics, 2025</span>
-                  </div>
+            <div class="affiliation">
+              Korea Advanced Institute of Science and Technology
+            </div>
+
+            <div class="journal-info">
+              <i class="fas fa-book-open journal-icon"></i>
+              IEEE Transactions on Visualization and Computer Graphics, 2025
+            </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
