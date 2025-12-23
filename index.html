@@ -38,6 +38,132 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    /* Custom color scheme */
+    :root {
+      --primary-color: #2563eb;
+      --primary-dark: #1d4ed8;
+      --secondary-color: #7c3aed;
+      --accent-color: #0891b2;
+      --text-dark: #1e293b;
+      --text-medium: #475569;
+    }
+
+    /* Title styling with gradient */
+    .publication-title {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700 !important;
+      line-height: 1.2 !important;
+      padding-bottom: 0.5rem;
+    }
+
+    /* Author names styling */
+    .publication-authors a {
+      color: var(--primary-color) !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .publication-authors a:hover {
+      color: var(--secondary-color) !important;
+    }
+
+    /* Institution and journal styling */
+    .publication-authors .author-block:last-child {
+      color: var(--text-medium);
+    }
+
+    .is-size-5.publication-authors:last-of-type {
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    .is-size-5.publication-authors:last-of-type span {
+      background: linear-gradient(135deg, #f0f9ff 0%, #ede9fe 100%);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      display: inline-block;
+      border-left: 4px solid var(--primary-color);
+    }
+
+    /* Section titles */
+    .title.is-3 {
+      color: var(--primary-color) !important;
+      font-weight: 600 !important;
+      position: relative;
+      display: inline-block;
+    }
+
+    .title.is-3::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      border-radius: 2px;
+    }
+
+    /* Buttons styling */
+    .button.is-dark {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+      border: none !important;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+    }
+
+    .button.is-dark:hover {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-color) 100%) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px -2px rgba(37, 99, 235, 0.3);
+    }
+
+    /* Abstract section */
+    .hero.is-light {
+      background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%) !important;
+    }
+
+    /* BibTeX section */
+    #BibTeX .title {
+      color: var(--primary-color) !important;
+    }
+
+    #BibTeX pre {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      border-radius: 12px;
+      border-left: 4px solid var(--primary-color);
+    }
+
+    /* Video section titles centering fix */
+    .hero-body .title.is-3 {
+      text-align: center;
+      display: block;
+    }
+
+    .hero-body .title.is-3::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Footer links */
+    footer a {
+      color: var(--primary-color) !important;
+    }
+
+    footer a:hover {
+      color: var(--secondary-color) !important;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
@@ -227,7 +353,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
