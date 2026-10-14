@@ -6,7 +6,7 @@
 
 ## [Project Page](https://jhkang0408.github.io/RTUGVADTE/)
 
-## This repository has moved
+## This repository has moved!
 
 > **Note:** This repository is no longer maintained. It has been superseded by our follow-up work,<br>
 > **Part-wise Translation of Upper-body Gestures via Real-time Target Estimation for Virtual Avatars in Dissimilar Environments** (IEEE TVCG, Under Review).<br>
