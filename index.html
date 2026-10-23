@@ -1,133 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners -->
-  <meta name="description" content="Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments - IEEE TVCG 2025">
-  <meta property="og:title" content="Real-time Translation of Upper-body Gestures to Virtual Avatars"/>
-  <meta property="og:description" content="A novel neural network framework for translating upper-body gestures in MR telepresence environments. Published in IEEE TVCG 2025."/>
-  <meta property="og:url" content="https://jhkang0408.github.io/RTUGVADTE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="https://jhkang0408.github.io/RTUGVADTE/static/images/Teaser_v3.PNG" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-  <meta name="twitter:title" content="Real-time Translation of Upper-body Gestures to Virtual Avatars">
-  <meta name="twitter:description" content="A novel neural network framework for translating upper-body gestures in MR telepresence environments. Published in IEEE TVCG 2025.">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="https://jhkang0408.github.io/RTUGVADTE/static/images/Teaser_v3.PNG">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Mixed Reality, Telepresence, Avatar, Gesture Translation, Neural Network, Computer Graphics, TVCG">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments</title>
-  <link rel="icon" type="image/x-icon" href="static/images/winter.jpg">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments - Jiho Kang">
+  <meta name="description" content="A neural network-based framework that translates users' upper-body gestures, including eye gaze, deictic gestures, free-form gestures, and the transitions between them, to virtual avatars in dissimilar MR telepresence environments in real time.">
+  <meta name="keywords" content="Mixed Reality, Telepresence, Virtual Avatar, Upper-body Gesture, Motion Retargeting, Neural Network">
+  <meta name="author" content="Jiho Kang, Taehei Kim, Hyeshim Kim, Sung-Hee Lee">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="KAIST">
+  <meta property="og:title" content="Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments">
+  <meta property="og:description" content="A neural network-based framework that translates users' upper-body gestures, including eye gaze, deictic gestures, free-form gestures, and the transitions between them, to virtual avatars in dissimilar MR telepresence environments in real time.">
+  <meta property="og:url" content="https://jhkang0408.github.io/RTUGVADTE/">
+  <meta property="og:image" content="https://jhkang0408.github.io/RTUGVADTE/static/images/teaser.jpg">
+  <meta property="article:author" content="Jiho Kang">
+  <meta property="article:section" content="Research">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments">
+  <meta name="citation_author" content="Kang, Jiho">
+  <meta name="citation_author" content="Kim, Taehei">
+  <meta name="citation_author" content="Kim, Hyeshim">
+  <meta name="citation_author" content="Lee, Sung-Hee">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_journal_title" content="IEEE Transactions on Visualization and Computer Graphics">
+  <meta name="citation_volume" content="31">
+  <meta name="citation_issue" content="10">
+  <meta name="citation_firstpage" content="8711">
+  <meta name="citation_lastpage" content="8725">
+  <meta name="citation_doi" content="10.1109/TVCG.2025.3577156">
+  <meta name="citation_pdf_url" content="https://jhkang0408.github.io/RTUGVADTE/static/pdfs/Real-time-Translation-of-Upper-body-Gestures-to-Virtual-Avatars-in-Dissimilar-Telepresence-Environments.pdf">
+
+  <meta name="theme-color" content="#2563eb">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <title>Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments</title>
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/png" href="static/images/icon.png">
+  <link rel="apple-touch-icon" href="static/images/icon.png">
+
+  <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-  <style>
-    /* 버튼 호버 효과 */
-    .publication-links .button {
-      transition: all 0.3s ease;
-    }
-    
-    .publication-links .button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    }
-    
-    .publication-links .button:active {
-      transform: translateY(-1px);
-    }
-  </style>
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments",
+    "author": [
+      {"@type": "Person", "name": "Jiho Kang", "affiliation": {"@type": "Organization", "name": "KAIST"}},
+      {"@type": "Person", "name": "Taehei Kim", "affiliation": {"@type": "Organization", "name": "KAIST"}},
+      {"@type": "Person", "name": "Hyeshim Kim", "affiliation": {"@type": "Organization", "name": "KAIST"}},
+      {"@type": "Person", "name": "Sung-Hee Lee", "affiliation": {"@type": "Organization", "name": "KAIST"}}
+    ],
+    "datePublished": "2025",
+    "publisher": {"@type": "Organization", "name": "IEEE Transactions on Visualization and Computer Graphics"},
+    "url": "https://jhkang0408.github.io/RTUGVADTE/",
+    "image": "https://jhkang0408.github.io/RTUGVADTE/static/images/teaser.jpg",
+    "sameAs": "https://doi.org/10.1109/TVCG.2025.3577156",
+    "keywords": ["Mixed Reality", "Telepresence", "Virtual Avatar", "Upper-body Gesture", "Motion Retargeting"]
+  }
+  </script>
 </head>
 <body>
 
 
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- More Works Dropdown -->
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View Related Publications">
+      <i class="fas fa-flask"></i>
+      Related Publications
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>Gesture Retargeting</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <a href="https://jhkang0408.github.io/RRDMVAART/" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Real-time Retargeting of Deictic Motion to Virtual Avatars for Augmented Reality Telepresence</h5>
+            <span class="work-venue">IEEE ISMAR, 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://github.com/jhkang0408/PTUGRTEVADE" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Part-wise Translation of Upper-body Gestures via Real-time Target Estimation for Virtual Avatars in Dissimilar Environments</h5>
+            <span class="work-venue">IEEE TVCG, Under Review</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+      <div class="dropdown-header dropdown-subheader">
+        <h4>Gesture Synthesis</h4>
+      </div>
+      <div class="works-list">
+        <a href="https://be9904.github.io/propgesture/" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>PropGesture: Few-shot Co-speech Gesture Synthesis for Handheld Props</h5>
+            <span class="work-venue">CGF, 2026</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-			<h1 class="title is-1 publication-title">Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments</h1>
-			<h4 class="title conference-title is-4" style="color: #6b6b6b;">IEEE Transactions on Visualization and Computer Graphics, 2025</h4>
-			
-			<div class="is-size-5 publication-authors">
-			  <!-- Paper authors -->
-			  <span class="author-block">
-			    <a href="https://github.com/jhkang0408" target="_blank">Jiho Kang</a><sup></sup>,</span>
-			    <span class="author-block">
-			      <a href="https://taeheikim.notion.site/Tay-Kim-698b87b1a0c34346a3e92fa3f7220198?pvs=4" target="_blank">Taehei Kim</a><sup></sup>,</span>
-			      <span class="author-block">
-			    <a href="https://jhkang0408.github.io/RTUGVADTE" target="_blank">Hyeshim Kim</a><sup></sup>,</span>
-			      <span class="author-block">
-			        <a href="https://lava.kaist.ac.kr/?page_id=41" target="_blank">Sung-Hee Lee</a>
-			      </span>
-			</div>
-			
-			<div class="is-size-5 publication-authors">
-			  <span class="author-block">KAIST</span>
-			</div>
+            <h1 class="title is-1 publication-title">Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments</h1>
+            <div class="is-size-5 publication-authors author-list">
+              <span class="author-block">
+                <a href="https://github.com/jhkang0408" target="_blank">Jiho Kang</a>,</span>
+              <span class="author-block">
+                <a href="https://hayleymol.github.io/" target="_blank">Taehei Kim</a>,</span>
+              <span class="author-block">Hyeshim Kim,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=AVII4wsAAAAJ&hl=en" target="_blank">Sung-Hee Lee</a></span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="static/pdfs/Real-time-Translation-of-Upper-body-Gestures-to-Virtual-Avatars-in-Dissimilar-Telepresence-Environments.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">KAIST<br>IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="static/pdfs/Real-time-Translation-of-Upper-body-Gestures-to-Virtual-Avatars-in-Dissimilar-Telepresence-Environments.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                      <span class="link-block">
-                        <a href="https://ieeexplore.ieee.org/document/11026252" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper (IEEE)</span>
-                      </a>
+                <span class="link-block">
+                  <a href="https://ieeexplore.ieee.org/document/11026252" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-ieee"></i>
                     </span>
+                    <span>IEEE Xplore</span>
+                  </a>
+                </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/_TVCG_Supplemental_Material__Real_time_Translation_of_Upper_body_Gestures_to_Virtual_Avatars_in_Dissimilar_Telepresence_Environments.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+                <span class="link-block">
+                  <a href="static/pdfs/_TVCG_Supplemental_Material__Real_time_Translation_of_Upper_body_Gestures_to_Virtual_Avatars_in_Dissimilar_Telepresence_Environments.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/jhkang0408/RTUGVADTE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                <span class="link-block">
+                  <a href="https://github.com/jhkang0408/RTUGVADTE" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
                 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+
+<!-- Youtube videos -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="video-block">
+            <p class="sota-slide-label">Presentation Video</p>
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/mBE3tl9B8NE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="video-block">
+            <p class="sota-slide-label">User Evaluation</p>
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/AmG1tvtSN9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="video-block">
+            <p class="sota-slide-label">Supplemental Animation Results</p>
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/Rhb9zL9ehJk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -135,25 +255,27 @@
     </div>
   </div>
 </section>
+<!-- End youtube videos -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full">
         <h2 class="title is-3">Abstract</h2>
-        
-        <!-- Teaser Image -->
-        <div class="item" style="margin-bottom: 1.5rem;">
-          <img src="static/images/Teaser_v3.PNG" alt="Teaser Image" class="center-image blend-img-background"/>
-          <p class="has-text-justified" style="font-size: 0.9rem; color: #666;">
-            User egocentric views (top) and room perspectives (bottom) of our MR telepresence spaces A (left) and B (right). In space B, avatar X′ represents user X from space A. In space A, avatar Y′ represents user Y from space B. Virtual avatars and objects are augmented at different locations and scales in each space. Both users focus their eye gaze on the avatar of the other party. They point at a particular object (Jupiter) with one hand (user X using the left hand and user Y using the right hand) while using the other hand to perform explanatory gestures. Our system accurately translates these upper-body gestures into the respective avatar motions in the remote space in realtime, enabling effective bi-directional interaction between users in remote locations.
-          </p>
+        <div class="abstract-inline-image">
+          <img src="static/images/teaser.jpg" alt="MR telepresence between two dissimilar spaces A and B">
         </div>
-        
-        <div class="content has-text-justified">
+
+        <div class="content has-text-justified abstract-text">
           <p>
-            In mixed reality (MR) avatar-mediated telepresence, avatar movement must be adjusted to convey the user's intent in a dissimilar space. This paper presents a novel neural network-based framework designed for translating upper-body gestures, which adjusts virtual avatar movements in dissimilar environments to accurately reflect the user's intended gestures in real-time. Our framework translates a wide range of upper-body gestures, including eye gaze, deictic gestures, free-form gestures, and the transitions between them. A key feature of our framework is its ability to generate natural upper-body gestures for users of different sizes, irrespective of handedness and eye dominance, even though the training is based on data from a single person. Unlike previous methods that require paired motion between users and avatars for training, our framework uses an unpaired approach, significantly reducing training time and allowing for generating a wider variety of motion types. These advantages were made possible by designing two separate networks: the Motion Progression Network, which interprets sparse tracking signals from the user to determine motion progression, and the Upper-body Gesture Network, which autoregressively generates the avatar's pose based on these progressions. We demonstrate the effectiveness of our framework through quantitative comparisons with state-of-the-art methods, qualitative animation results, and a user evaluation in MR telepresence scenarios.
+            In mixed reality (MR) avatar-mediated telepresence, avatar movement must be adjusted to convey the user's intent in a dissimilar space.
+            This paper presents a novel neural network-based framework designed for translating upper-body gestures, which adjusts virtual avatar movements in dissimilar environments to accurately reflect the user's intended gestures in real-time.
+            Our framework translates a wide range of upper-body gestures, including eye gaze, deictic gestures, free-form gestures, and the transitions between them.
+            A key feature of our framework is its ability to generate natural upper-body gestures for users of different sizes, irrespective of handedness and eye dominance, even though the training is based on data from a single person.
+            Unlike previous methods that require paired motion between users and avatars for training, our framework uses an unpaired approach, significantly reducing training time and allowing for generating a wider variety of motion types.
+            These advantages were made possible by designing two separate networks: the Motion Progression Network, which interprets sparse tracking signals from the user to determine motion progression, and the Upper-body Gesture Network, which autoregressively generates the avatar's pose based on these progressions.
+            We demonstrate the effectiveness of our framework through quantitative comparisons with state-of-the-art methods, qualitative animation results, and a user evaluation in MR telepresence scenarios.
           </p>
         </div>
       </div>
@@ -162,40 +284,341 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Youtube video -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Demo Video</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/AmG1tvtSN9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-centered">
+          <figure>
+            <img src="static/images/overview.png"
+              alt="Overview of the upper-body gesture translation framework"
+              style="width: 100%; height: auto;">
+            <figcaption class="figure-caption">
+              The process is initiated by extracting behavioral features from the user, which are then analyzed by the <b>Motion Progression Network (MPNet)</b> to identify the user's motion progressions for gaze, deictic gesture, and idle.
+              The <b>Upper-body Gesture Network (UGNet)</b> then regresses the avatar's next-frame end-effectors (eye gaze direction, head, right hand, and right index fingertip) based on these progressions
+              and a linear blend of the user's and avatar's current end-effectors, weighted by the progression values.
+              Finally, an IK solver computes the avatar's upper-body pose for the next frame.
+              The two networks are trained separately on unpaired data and connected at runtime.
+            </figcaption>
+          </figure>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
+
+<!-- Different users -->
+<section class="section sota-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Real-time Translation: Different Users and Avatars</h2>
+        <div class="table-container">
+          <table class="table is-bordered is-narrow subject-table">
+            <thead>
+              <tr><th>Height</th><th>161 cm</th><th>172 cm</th><th>173 cm</th><th>174 cm</th><th>180 cm</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>Gender</th><td>Female</td><td>Male</td><td>Male</td><td>Female</td><td>Male</td></tr>
+              <tr><th>Handedness</th><td>Right</td><td>Right</td><td>Left</td><td>Left</td><td>Right</td></tr>
+              <tr><th>Arm Length</th><td>63 cm</td><td>70 cm</td><td>68 cm</td><td>70 cm</td><td>75 cm</td></tr>
+              <tr><th>Dominant Eye</th><td>Left</td><td>Right</td><td>Right</td><td>Left</td><td>Left</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sota-video-shell">
+          <button class="sota-carousel-btn prev" onclick="changeSotaVideo(this, -1)" aria-label="Previous video">
+            &#10094;
+          </button>
+
+          <div class="sota-video-viewport">
+            <div class="sota-slide is-active">
+              <p class="sota-slide-label">161 cm subject: Pointing and gazing at two targets in sequence</p>
+              <video muted loop playsinline controls preload="metadata">
+                <source src="static/videos/subjects/161_pointing_two_targets.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">172 cm subject: Explaining with pointing</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/subjects/172_explaining_pointing.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">173 cm subject: Pointing at a single target with gaze shift</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/subjects/173_pointing_gaze_shift.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">174 cm subject: Explaining with touching</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/subjects/174_explaining_touching.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">174 cm subject: Touching and gazing at two targets in sequence</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/subjects/174_touching_two_targets.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">180 cm subject: Touching a single target with gaze shift</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/subjects/180_touching_gaze_shift.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="sota-counter"></div>
+
+          <h2 class="figure-caption">
+            Upper-body gestures of test subjects with diverse heights, handedness, arm lengths, and eye dominance (left) and the avatar motions translated in real time by our framework (right). The targets are placed at different positions for the user and the avatar. Although trained on the motion data of a single 170 cm, right-handed, right-eye dominant subject, our framework generalizes to all test subjects.
+          </h2>
+
+          <button class="sota-carousel-btn next" onclick="changeSotaVideo(this, 1)" aria-label="Next video">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Different scale -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Different Scale between User and Avatar</h2>
+      <video poster="" autoplay controls muted loop playsinline height="100%" preload="metadata">
+        <source src="static/videos/analysis/different_scale.mp4" type="video/mp4">
+      </video>
+      <h2 class="figure-caption">
+        UGNet's end-effector output can be adjusted to accommodate size differences between the user and the avatar by scaling the positions (e.g., a 172 cm user and a 189 cm avatar, 10% larger than the user).
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Different skeletal structure -->
+<section class="section sota-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Different Skeletal Structure between User and Avatar</h2>
+        
+        <div class="sota-video-shell">
+          <button class="sota-carousel-btn prev" onclick="changeSotaVideo(this, -1)" aria-label="Previous video">
+            &#10094;
+          </button>
+
+          <div class="sota-video-viewport">
+            <div class="sota-slide is-active">
+              <p class="sota-slide-label">Avatar: AJ</p>
+              <video muted loop playsinline controls preload="metadata">
+                <source src="static/videos/skeletal/aj.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Avatar: Claire</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/skeletal/claire.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Avatar: Jackie</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/skeletal/jackie.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="sota-counter"></div>
+
+          <h2 class="figure-caption">
+            Our avatar-invariant output representation (end-effector transformations) allows the translated gestures to be applied to avatars with different skeletal structures through an IK solver.
+          </h2>
+
+          <button class="sota-carousel-btn next" onclick="changeSotaVideo(this, 1)" aria-label="Next video">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Robustness to target position -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Robustness to the Change of Target Position</h2>
+      <video poster="" autoplay controls muted loop playsinline height="100%" preload="metadata">
+        <source src="static/videos/analysis/robustness_target_position.mp4" type="video/mp4">
+      </video>
+      <h2 class="figure-caption">
+        As the avatar's target position changes, our framework continuously adapts the avatar's gestures toward its own target while preserving the user's gesture intention.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Noisy tracking -->
+<section class="section sota-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Robustness to Noisy Tracking in Real-world Scenarios</h2>
+        
+        <div class="sota-video-shell">
+          <button class="sota-carousel-btn prev" onclick="changeSotaVideo(this, -1)" aria-label="Previous video">
+            &#10094;
+          </button>
+
+          <div class="sota-video-viewport">
+            <div class="sota-slide is-active">
+              <p class="sota-slide-label">Missed Tracking</p>
+              <video muted loop playsinline controls preload="metadata">
+                <source src="static/videos/noise/missed_tracking.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Complete tracking failure, during which the system keeps the last tracked frame's values. For durations of 0.6 s or less, the framework maintains acceptable animation quality.</p>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Occlusion (Jitter) 1</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/noise/occlusion_1.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Occasional, high-magnitude changes in tracking data, typically caused by sudden tracking errors due to occlusion.</p>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Occlusion (Jitter) 2</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/noise/occlusion_2.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Occasional, high-magnitude changes in tracking data, typically caused by sudden tracking errors due to occlusion.</p>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Continuous Noise 1</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/noise/continuous_1.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Persistent background noise, often stemming from equipment limitations.</p>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Continuous Noise 2</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/noise/continuous_2.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Persistent background noise, often stemming from equipment limitations.</p>
+            </div>
+          </div>
+
+          <div class="sota-counter"></div>
+
+          <h2 class="figure-caption">
+            Our framework maintains animation quality under noisy tracking without noisy data augmentation or noise-specific loss terms, thanks to the motion progression serving as an intermediate representation, the user-invariant angle-based input, and MPNet's 1-second input window.
+          </h2>
+
+          <button class="sota-carousel-btn next" onclick="changeSotaVideo(this, 1)" aria-label="Next video">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SOTA comparison -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Comparison with State-of-the-art Method</h2>
+      <video poster="" autoplay controls muted loop playsinline height="100%" preload="metadata">
+        <source src="static/videos/analysis/sota_comparison.mp4" type="video/mp4">
+      </video>
+      <h2 class="figure-caption">
+        When the user makes a free-form gesture toward the target, our framework accurately translates the gesture toward the avatar's target, whereas AMNet [Kang et al. 2023], trained on paired deictic motion data, produces a wiggling deictic gesture.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Alternative architectures -->
+<section class="section sota-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Comparison with Alternative Network Architectures</h2>
+        
+        <div class="sota-video-shell">
+          <button class="sota-carousel-btn prev" onclick="changeSotaVideo(this, -1)" aria-label="Previous video">
+            &#10094;
+          </button>
+
+          <div class="sota-video-viewport">
+            <div class="sota-slide is-active">
+              <p class="sota-slide-label">Comparative Study for MPNet</p>
+              <video muted loop playsinline controls preload="metadata">
+                <source src="static/videos/analysis/architecture_mpnet.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Motion progressions predicted by GRU-MoE (ours), MLP, and Transformer, and the resulting avatar motions.</p>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Comparative Study for UGNet</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/analysis/architecture_ugnet.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Avatar motions generated by UGNet variants, including MoE (ours), MLP, Transformer, and an autoregressive motion diffusion model. The MoE model offers the most suitable balance of accuracy, naturalness, and responsiveness.</p>
+            </div>
+          </div>
+
+          <div class="sota-counter"></div>
+
+          <button class="sota-carousel-btn next" onclick="changeSotaVideo(this, 1)" aria-label="Next video">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BibTeX citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <div class="bibtex-header">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{kang2025real,
+      <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+        <i class="fas fa-copy"></i>
+        <span class="copy-text">Copy</span>
+      </button>
+    </div>
+    <pre id="bibtex-code"><code>@article{kang2025real,
   title={Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments},
   author={Kang, Jiho and Kim, Taehei and Kim, Hyeshim and Lee, Sung-Hee},
   journal={IEEE Transactions on Visualization and Computer Graphics},
+  volume={31},
+  number={10},
+  pages={8711--8725},
   year={2025},
-  publisher={IEEE}
+  publisher={IEEE},
+  doi={10.1109/TVCG.2025.3577156}
 }</code></pre>
-    </div>
+  </div>
 </section>
-<!--End BibTex citation -->
+<!-- End BibTeX citation -->
+  </main>
 
 
   <footer class="footer">
@@ -215,12 +638,6 @@
     </div>
   </div>
 </footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
