@@ -1687,13 +1687,18 @@ a:focus {
   margin-top: 2.5rem;
 }
 
-.subject-table {
-  margin: 0 auto 1.5rem;
-  font-size: 0.95rem;
+
+.video-label {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
-.subject-table th,
-.subject-table td {
-  text-align: center !important;
-  vertical-align: middle;
+.section-subtitle {
+  text-align: center;
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin-top: -0.75rem;
+  margin-bottom: 1.5rem;
 }

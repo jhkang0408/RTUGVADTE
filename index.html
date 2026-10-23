@@ -197,12 +197,12 @@
                 </span>
 
                 <span class="link-block">
-                  <a href="static/pdfs/_TVCG_Supplemental_Material__Real_time_Translation_of_Upper_body_Gestures_to_Virtual_Avatars_in_Dissimilar_Telepresence_Environments.pdf" target="_blank"
+                  <a href="https://www.youtube.com/watch?v=mBE3tl9B8NE" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+                      <i class="fab fa-youtube"></i>
                     </span>
-                    <span>Supplementary</span>
+                    <span>Video</span>
                   </a>
                 </span>
 
@@ -231,21 +231,21 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <div class="video-block">
-            <p class="sota-slide-label">Presentation Video</p>
+            <p class="video-label">Presentation Video</p>
             <div class="publication-video">
               <iframe src="https://www.youtube.com/embed/mBE3tl9B8NE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
           </div>
 
           <div class="video-block">
-            <p class="sota-slide-label">User Evaluation</p>
+            <p class="video-label">User Evaluation Video</p>
             <div class="publication-video">
               <iframe src="https://www.youtube.com/embed/AmG1tvtSN9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
           </div>
 
           <div class="video-block">
-            <p class="sota-slide-label">Supplemental Animation Results</p>
+            <p class="video-label">Supplemental Animation Results</p>
             <div class="publication-video">
               <iframe src="https://www.youtube.com/embed/Rhb9zL9ehJk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
@@ -315,21 +315,8 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Real-time Translation: Different Users and Avatars</h2>
-        <div class="table-container">
-          <table class="table is-bordered is-narrow subject-table">
-            <thead>
-              <tr><th>Height</th><th>161 cm</th><th>172 cm</th><th>173 cm</th><th>174 cm</th><th>180 cm</th></tr>
-            </thead>
-            <tbody>
-              <tr><th>Gender</th><td>Female</td><td>Male</td><td>Male</td><td>Female</td><td>Male</td></tr>
-              <tr><th>Handedness</th><td>Right</td><td>Right</td><td>Left</td><td>Left</td><td>Right</td></tr>
-              <tr><th>Arm Length</th><td>63 cm</td><td>70 cm</td><td>68 cm</td><td>70 cm</td><td>75 cm</td></tr>
-              <tr><th>Dominant Eye</th><td>Left</td><td>Right</td><td>Right</td><td>Left</td><td>Left</td></tr>
-            </tbody>
-          </table>
-        </div>
-
+        <h2 class="title is-3 has-text-centered">Real-time Translation of Upper-body Gesture: Different Users and Avatars</h2>
+        <p class="section-subtitle">(Subject Height &ndash; 161, 172, 173, 174, 180cm)</p>
         <div class="sota-video-shell">
           <button class="sota-carousel-btn prev" onclick="changeSotaVideo(this, -1)" aria-label="Previous video">
             &#10094;
@@ -376,8 +363,147 @@
 
           <div class="sota-counter"></div>
 
-          <h2 class="figure-caption">
+          <h2 class="figure-caption" style="max-width: 880px;">
             Upper-body gestures of test subjects with diverse heights, handedness, arm lengths, and eye dominance (left) and the avatar motions translated in real time by our framework (right). The targets are placed at different positions for the user and the avatar. Although trained on the motion data of a single 170 cm, right-handed, right-eye dominant subject, our framework generalizes to all test subjects.
+          </h2>
+
+          <button class="sota-carousel-btn next" onclick="changeSotaVideo(this, 1)" aria-label="Next video">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SOTA comparison -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Comparison with State-of-the-art Method</h2>
+      <video poster="" autoplay controls muted loop playsinline height="100%" preload="metadata">
+        <source src="static/videos/analysis/sota_comparison.mp4" type="video/mp4">
+      </video>
+      <h2 class="figure-caption" style="max-width: 860px;">
+        When the user makes a free-form gesture toward the target, our framework accurately translates the gesture toward the avatar's target, whereas AMNet [Kang et al. 2023], trained on paired deictic motion data, produces a wiggling deictic gesture.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Alternative architectures -->
+<section class="section sota-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Comparison with Alternative Network Architectures</h2>
+        
+        <div class="sota-video-shell">
+          <button class="sota-carousel-btn prev" onclick="changeSotaVideo(this, -1)" aria-label="Previous video">
+            &#10094;
+          </button>
+
+          <div class="sota-video-viewport">
+            <div class="sota-slide is-active">
+              <p class="sota-slide-label">Comparative Study for MPNet</p>
+              <video muted loop playsinline controls preload="metadata">
+                <source src="static/videos/analysis/architecture_mpnet.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Motion progressions predicted by GRU-MoE (ours), MLP, and Transformer, and the resulting avatar motions.</p>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Comparative Study for UGNet</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/analysis/architecture_ugnet.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption" style="max-width: 760px;">Avatar motions generated by UGNet variants, including MoE (ours), MLP, Transformer, and an autoregressive motion diffusion model. The MoE model offers the most suitable balance of accuracy, naturalness, and responsiveness.</p>
+            </div>
+          </div>
+
+          <div class="sota-counter"></div>
+
+          <button class="sota-carousel-btn next" onclick="changeSotaVideo(this, 1)" aria-label="Next video">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Robustness to target position -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Robustness to the Change of Target Position</h2>
+      <video poster="" autoplay controls muted loop playsinline height="100%" preload="metadata">
+        <source src="static/videos/analysis/robustness_target_position.mp4" type="video/mp4">
+      </video>
+      <h2 class="figure-caption">
+        As the avatar's target position changes, our framework continuously adapts the avatar's gestures toward its own target while preserving the user's gesture intention.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Noisy tracking -->
+<section class="section sota-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Robustness to Noisy Tracking in Real-world Scenarios</h2>
+        
+        <div class="sota-video-shell">
+          <button class="sota-carousel-btn prev" onclick="changeSotaVideo(this, -1)" aria-label="Previous video">
+            &#10094;
+          </button>
+
+          <div class="sota-video-viewport">
+            <div class="sota-slide is-active">
+              <p class="sota-slide-label">Missed Tracking</p>
+              <video muted loop playsinline controls preload="metadata">
+                <source src="static/videos/noise/missed_tracking.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Complete tracking failure, during which the system keeps the last tracked frame's values. For durations of 0.6 s or less, the framework maintains acceptable animation quality.</p>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Occlusion (Jitter) 1</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/noise/occlusion_1.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption" style="max-width: 870px;">Occasional, high-magnitude changes in tracking data, typically caused by sudden tracking errors due to occlusion.</p>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Occlusion (Jitter) 2</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/noise/occlusion_2.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption" style="max-width: 870px;">Occasional, high-magnitude changes in tracking data, typically caused by sudden tracking errors due to occlusion.</p>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Continuous Noise 1</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/noise/continuous_1.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Persistent background noise, often stemming from equipment limitations.</p>
+            </div>
+            <div class="sota-slide">
+              <p class="sota-slide-label">Continuous Noise 2</p>
+              <video muted loop playsinline controls preload="none">
+                <source src="static/videos/noise/continuous_2.mp4" type="video/mp4">
+              </video>
+              <p class="figure-caption">Persistent background noise, often stemming from equipment limitations.</p>
+            </div>
+          </div>
+
+          <div class="sota-counter"></div>
+
+          <h2 class="figure-caption" style="max-width: 850px;">
+            Our framework maintains animation quality under noisy tracking without noisy data augmentation or noise-specific loss terms, thanks to the motion progression serving as an intermediate representation, the user-invariant angle-based input, and MPNet's 1-second input window.
           </h2>
 
           <button class="sota-carousel-btn next" onclick="changeSotaVideo(this, 1)" aria-label="Next video">
@@ -444,145 +570,6 @@
           <h2 class="figure-caption">
             Our avatar-invariant output representation (end-effector transformations) allows the translated gestures to be applied to avatars with different skeletal structures through an IK solver.
           </h2>
-
-          <button class="sota-carousel-btn next" onclick="changeSotaVideo(this, 1)" aria-label="Next video">
-            &#10095;
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Robustness to target position -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3 has-text-centered">Robustness to the Change of Target Position</h2>
-      <video poster="" autoplay controls muted loop playsinline height="100%" preload="metadata">
-        <source src="static/videos/analysis/robustness_target_position.mp4" type="video/mp4">
-      </video>
-      <h2 class="figure-caption">
-        As the avatar's target position changes, our framework continuously adapts the avatar's gestures toward its own target while preserving the user's gesture intention.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<!-- Noisy tracking -->
-<section class="section sota-section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Robustness to Noisy Tracking in Real-world Scenarios</h2>
-        
-        <div class="sota-video-shell">
-          <button class="sota-carousel-btn prev" onclick="changeSotaVideo(this, -1)" aria-label="Previous video">
-            &#10094;
-          </button>
-
-          <div class="sota-video-viewport">
-            <div class="sota-slide is-active">
-              <p class="sota-slide-label">Missed Tracking</p>
-              <video muted loop playsinline controls preload="metadata">
-                <source src="static/videos/noise/missed_tracking.mp4" type="video/mp4">
-              </video>
-              <p class="figure-caption">Complete tracking failure, during which the system keeps the last tracked frame's values. For durations of 0.6 s or less, the framework maintains acceptable animation quality.</p>
-            </div>
-            <div class="sota-slide">
-              <p class="sota-slide-label">Occlusion (Jitter) 1</p>
-              <video muted loop playsinline controls preload="none">
-                <source src="static/videos/noise/occlusion_1.mp4" type="video/mp4">
-              </video>
-              <p class="figure-caption">Occasional, high-magnitude changes in tracking data, typically caused by sudden tracking errors due to occlusion.</p>
-            </div>
-            <div class="sota-slide">
-              <p class="sota-slide-label">Occlusion (Jitter) 2</p>
-              <video muted loop playsinline controls preload="none">
-                <source src="static/videos/noise/occlusion_2.mp4" type="video/mp4">
-              </video>
-              <p class="figure-caption">Occasional, high-magnitude changes in tracking data, typically caused by sudden tracking errors due to occlusion.</p>
-            </div>
-            <div class="sota-slide">
-              <p class="sota-slide-label">Continuous Noise 1</p>
-              <video muted loop playsinline controls preload="none">
-                <source src="static/videos/noise/continuous_1.mp4" type="video/mp4">
-              </video>
-              <p class="figure-caption">Persistent background noise, often stemming from equipment limitations.</p>
-            </div>
-            <div class="sota-slide">
-              <p class="sota-slide-label">Continuous Noise 2</p>
-              <video muted loop playsinline controls preload="none">
-                <source src="static/videos/noise/continuous_2.mp4" type="video/mp4">
-              </video>
-              <p class="figure-caption">Persistent background noise, often stemming from equipment limitations.</p>
-            </div>
-          </div>
-
-          <div class="sota-counter"></div>
-
-          <h2 class="figure-caption">
-            Our framework maintains animation quality under noisy tracking without noisy data augmentation or noise-specific loss terms, thanks to the motion progression serving as an intermediate representation, the user-invariant angle-based input, and MPNet's 1-second input window.
-          </h2>
-
-          <button class="sota-carousel-btn next" onclick="changeSotaVideo(this, 1)" aria-label="Next video">
-            &#10095;
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- SOTA comparison -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3 has-text-centered">Comparison with State-of-the-art Method</h2>
-      <video poster="" autoplay controls muted loop playsinline height="100%" preload="metadata">
-        <source src="static/videos/analysis/sota_comparison.mp4" type="video/mp4">
-      </video>
-      <h2 class="figure-caption">
-        When the user makes a free-form gesture toward the target, our framework accurately translates the gesture toward the avatar's target, whereas AMNet [Kang et al. 2023], trained on paired deictic motion data, produces a wiggling deictic gesture.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<!-- Alternative architectures -->
-<section class="section sota-section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Comparison with Alternative Network Architectures</h2>
-        
-        <div class="sota-video-shell">
-          <button class="sota-carousel-btn prev" onclick="changeSotaVideo(this, -1)" aria-label="Previous video">
-            &#10094;
-          </button>
-
-          <div class="sota-video-viewport">
-            <div class="sota-slide is-active">
-              <p class="sota-slide-label">Comparative Study for MPNet</p>
-              <video muted loop playsinline controls preload="metadata">
-                <source src="static/videos/analysis/architecture_mpnet.mp4" type="video/mp4">
-              </video>
-              <p class="figure-caption">Motion progressions predicted by GRU-MoE (ours), MLP, and Transformer, and the resulting avatar motions.</p>
-            </div>
-            <div class="sota-slide">
-              <p class="sota-slide-label">Comparative Study for UGNet</p>
-              <video muted loop playsinline controls preload="none">
-                <source src="static/videos/analysis/architecture_ugnet.mp4" type="video/mp4">
-              </video>
-              <p class="figure-caption">Avatar motions generated by UGNet variants, including MoE (ours), MLP, Transformer, and an autoregressive motion diffusion model. The MoE model offers the most suitable balance of accuracy, naturalness, and responsiveness.</p>
-            </div>
-          </div>
-
-          <div class="sota-counter"></div>
 
           <button class="sota-carousel-btn next" onclick="changeSotaVideo(this, 1)" aria-label="Next video">
             &#10095;
