@@ -9,5 +9,5 @@
 ## This repository has moved!
 
 > **Note:** This repository is no longer maintained. It has been superseded by our follow-up work,<br>
-> **Part-wise Translation of Upper-body Gestures via Real-time Target Estimation for Virtual Avatars in Dissimilar Environments** (IEEE TVCG, Under Review).<br>
+> **Part-wise Translation of Upper-body Gestures via Real-time Target Estimation for Virtual Avatars in Dissimilar Environments** (IEEE TVCG, 2026).<br>
 > Please visit the new repository: **https://github.com/jhkang0408/PTUGRTEVADE**
