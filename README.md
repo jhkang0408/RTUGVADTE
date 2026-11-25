@@ -14,8 +14,6 @@
 
 ## Citation
 
-If you find this work useful, please cite our paper:
-
 ```bibtex
 @article{kang2025real,
   title={Real-time Translation of Upper-body Gestures to Virtual Avatars in Dissimilar Telepresence Environments},
